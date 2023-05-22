@@ -1,0 +1,129 @@
+Front-end Engineer (React) Volunteer Pre-work at Edustipend 
+
+ 
+
+Task 1: 
+
+Given the user interface mock below, identify the core components that 
+
+make up the user interface. 
+
+ 
+
+Solution: 
+
+App Component 
+
+Header Component 
+
+2a. Contact us  
+
+2b. Signup  
+
+Treading songs component 
+
+3a. Heading text 
+
+3b. Trending music form  
+
+4.Create playlist component 
+
+4a. Text1 
+
+4b. Text2 
+
+4c. Button Component 
+
+ 
+
+Task 2: 
+
+Write React code for two of the components you identified in the UI 
+
+mockup above. 
+
+ 
+
+1) import React from 'react';
+
+function CreatePlaylist() {
+    return(
+    <div className = 'create-playlist-box'>
+        <h1>Make your party fun!</h1>
+        <p>create your own custom playlist today.</p>
+        <button type = "button" className='btn bg-warning'>Create playlist</button>
+    </div>
+    )
+}
+
+export default CreatePlaylist
+
+
+2) import React from "react";
+
+function Header() {
+  function signUpForm() {
+    <div>
+      <form >
+        <div className="mb-3 mt-3">
+          <label htmlFor="email" className="form-label">
+            Email:
+          </label>
+          <input
+            type="email"
+            className="form-control"
+            id="email"
+            placeholder="Enter email"
+            name="email"
+          ></input>
+        </div>
+        <div className="mb-3">
+          <label htmlFor="pwd" className="form-label">
+            Password:
+          </label>
+          <input
+            type="password"
+            className="form-control"
+            id="pwd"
+            placeholder="Enter password"
+            name="pswd"
+          ></input>
+        </div>
+        <div className="form-check mb-3">
+          <label className="form-check-label">
+            <input className="form-check-input" type="checkbox" name="remember">
+              {" "}
+              Remember me{" "}
+            </input>
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>;
+  }
+
+  return (
+    <div className="header-box">
+      <button type="button" className="btn">
+        Contact us
+      </button>
+      <button
+        type="submit"
+        className="btn bg-warning signup-btn"
+        onClick={signUpForm}>
+        Signup
+      </button>
+    </div>
+  );
+}
+
+export default Header;
+
+
+  
+
+Task 3: 
+
+Push your code to GitHub and provide us with the link to the code, so we 
+
+can review it. 
