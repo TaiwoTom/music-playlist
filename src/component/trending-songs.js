@@ -7,7 +7,14 @@ const buttn = (
 );
 
 function TrendingSongs() {
+  // const [isLoading, setIsLoading] = React.useState(true);
+  // const [data, setData] = React.useState([]);
+  // const [showData, setShowData] = React.useState(false);
   function loadMusic() {
+    // setIsLoading(true);
+    // setShowData(true);
+    // const data = null;
+
     const xhr = new XMLHttpRequest();
     xhr.withCredentials = true;
 
@@ -25,6 +32,10 @@ function TrendingSongs() {
       "39b119d0famshc53a3940801a132p199611jsn6a98ea5839bd"
     );
     xhr.setRequestHeader("X-RapidAPI-Host", "spotify23.p.rapidapi.com");
+
+    // xhr.send(data);
+    // setIsLoading(false);
+    // setData(JSON["this.responseText"]);
   }
 
   return (

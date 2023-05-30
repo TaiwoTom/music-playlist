@@ -25,44 +25,60 @@
 }
 
 .create-playlist-box {
- margin: 15% 0;
- margin-left: 80px;
- line-height: 45px;
-
+  margin: 15% 0;
+  margin-left: 80px;
+  line-height: 45px;
 }
-.create-playlist-box p{
+.create-playlist-box p {
   font-size: 19px;
 }
 
-
- @media only screen and (min-width: 768px)  {
-  /* For desktop:  */
-  .trending-songs-box {
-    margin-top: -476px;
-    padding: 20px;
-    position: absolute;
-    right: 1em;
-    height:70%;
-    border-style: solid;
-   
-  }
-  
- } 
-
- .trending-songs-box {
-  margin-top: -476px;
+.trending-songs-box {
+  margin-top: -440px;
   padding: 20px;
   position: absolute;
   right: 1em;
-  height:70%;
+  height: 70%;
   border-style: solid;
- }
+}
 
 .trending-songs-box .btn {
   display: block;
-  
-
 }
 
+@media screen and (max-width: 914px) {
+  * {
+    margin: 0px;
+    padding: 3px;
+    box-sizing: border-box;
+    background-color: rgb(225, 224, 224);
+    overflow: hidden;
+  }
 
+  .create-playlist-box {
+    margin: 15% 0;
+    margin-left: 60px;
+    line-height: 45px;
+  }
 
+  .trending-songs-box {
+    top: 900px;
+    padding: 20px;
+    position: absolute;
+    height: 50vh;
+    border-style: solid;
+    margin-right: 59px;
+  }
+
+  .header-box {
+    border-style: solid;
+    padding: 5px 10px;
+    margin: 30px 0;
+    margin-right: 25px;
+    margin-left: 30px;
+    background-color: white;
+    display: flex;
+    justify-content: right;
+    border-radius: 15px;
+  }
+}

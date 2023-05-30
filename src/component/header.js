@@ -3,7 +3,7 @@ import React from "react";
 function Header() {
   function signUpForm() {
     <div>
-      <form >
+      <form>
         <div className="mb-3 mt-3">
           <label htmlFor="email" className="form-label">
             Email:
@@ -25,7 +25,7 @@ function Header() {
             className="form-control"
             id="pwd"
             placeholder="Enter password"
-            name="pswd"
+            name="pwd"
           ></input>
         </div>
         <div className="form-check mb-3">
@@ -36,7 +36,9 @@ function Header() {
             </input>
           </label>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" className="btn btn-primary">
+          Submit
+        </button>
       </form>
     </div>;
   }
@@ -49,8 +51,9 @@ function Header() {
       <button
         type="submit"
         className="btn bg-warning signup-btn"
-        onClick={signUpForm}>
-        Signup
+        onClick={signUpForm}
+      >
+        Sign up
       </button>
     </div>
   );
