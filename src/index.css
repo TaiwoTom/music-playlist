@@ -3,7 +3,7 @@
   padding: 0px;
   box-sizing: border-box;
   background-color: rgb(225, 224, 224);
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .header-box {
@@ -38,7 +38,7 @@
   padding: 20px;
   position: absolute;
   right: 1em;
-  height: 70%;
+  height: 60%;
   border-style: solid;
 }
 
@@ -82,3 +82,7 @@
     border-radius: 15px;
   }
 }
+
+/* form {
+  background-color: rgb(244, 208, 26) !important;
+} */
